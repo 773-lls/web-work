@@ -1,0 +1,39 @@
+body{
+    background-color:royalblue;
+}
+div{
+    border:none;
+    border-collapse: collapse;
+    display:inline-block;
+    color:white;
+}
+#num{
+    border:none;
+    background-color: royalblue;
+    width:70px;
+}
+#account{
+    border:none;
+    background-color: royalblue;
+}
+input::placeholder{
+    color:white;
+}
+#account option{
+    color:white;
+}
+#account{
+    color:white;
+}
+img{
+    vertical-align: middle;
+    border:none;
+    color:white;
+}
+.top{
+    border:none;
+    background-color: royalblue;
+    padding-right:0;
+    margin-left: 370px;
+}
+
