@@ -1,0 +1,21 @@
+input::placeholder{
+    color:black;
+    font-size: larger;
+}
+.input{
+    border:none;
+}
+#revise{
+    color:royalblue;
+}
+#revise:hover{
+    color:red;
+    text-decoration: underline;
+}
+#address::placeholder{
+    color:royalblue;
+}
+.add{
+    font-size:small;
+    color:darkgray;
+}
