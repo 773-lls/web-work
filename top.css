@@ -1,39 +1,41 @@
 body{
-    background-color:royalblue;
-}
-div{
+    background-color: #6053B7;
     border:none;
-    border-collapse: collapse;
-    display:inline-block;
     color:white;
+    font-size: larger;
 }
-#num{
+.container{
+    width:100%;
+    display:flex;
+}
+.container div{
+    width:50%;
+    position:relative;
+}
+.top input,img,select{
+    position:absolute;
+}
+input{
+    width:80px;
+    right:150px;
+    top:15px;
+    background-color: #6053B7;
     border:none;
-    background-color: royalblue;
-    width:70px;
 }
-#account{
-    border:none;
-    background-color: royalblue;
-}
-input::placeholder{
-    color:white;
-}
-#account option{
-    color:white;
-}
-#account{
+::placeholder{
     color:white;
 }
 img{
-    vertical-align: middle;
-    border:none;
-    color:white;
+    width:32px;
+    height:32px;
+    right:120px;
+    top:5px;
 }
-.top{
+select{
+    background-color: #6053B7;
+    color:white;
+    right:30px;
+    top:15px;
     border:none;
-    background-color: royalblue;
-    padding-right:0;
-    margin-left: 370px;
 }
 

@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     background-color:#6053B7;
-    width:300px;
+    width:180px;
 }
 .head img{
     width:30%;
@@ -22,13 +22,13 @@
     border-top:5px solid dimgray;
     display:flex;
     flex-direction: column;
-    width:300px;
+    width:180px;
 }
 .button1 button{
     border:none;
     border-collapse: collapse;
     background-color: #6053B7;
-    font-size:30px;
+    font-size:25px;
     align-items: center;
 }
 .button2{
