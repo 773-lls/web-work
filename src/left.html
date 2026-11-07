@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左侧导航栏</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../style/left.css">
+</head>
+<body>
+<div class="head">
+<img id="leftHead" src="../images/head.png" alt="人物头像"><br>
+    <span>谭云聪</span>
+</div>
+<div class="button1">
+        <button class="button2" type="button" onclick="jump('src/button/home.html')"><img src="../images/shouye.jpg" alt="首页按钮图标">&nbsp;首页</button>
+        <button class="button2" type="button" onclick="jump('src/button/common.html')"><img src="../images/changyong.jpg" alt="常用按钮图标">&nbsp;常用</button>
+        <button class="button2" type="button" onclick="jump('src/button/app.html')"><img src="../images/yingyingzhongxin.jpg" alt="应用中心按钮图标">&nbsp;应用中心</button>
+        <button class="button2" type="button" onclick="jump('src/button/course.html')"><img src="../images/kecheng.jpg" alt="课程按钮图标">课程</button>
+        <button class="button2" type="button" onclick="jump('src/button/major.html')"><img src="../images/weizhuanye.jpg" alt="微专业按钮图标">&nbsp;微专业报名</button>
+        <button class="button2" type="button" onclick="jump('src/button/note.html')"><img src="../images/biji.jpg" alt="笔记按钮图标">&nbsp;笔记</button>
+        <button class="button2" type="button" onclick="jump('src/button/message.html')"><img src="../images/xiaoxi.jpg" alt="消息按钮图标">&nbsp;消息</button>
+        <button class="button2" type="button" onclick="jump('src/button/group.html')"><img src="../images/xiaozu.jpg" alt="小组按钮图标">&nbsp;小组</button>
+        <button class="button2" type="button" onclick="jump('src/button/cloud.html')"><img src="../images/yunpan.jpg" alt="云盘按钮图标">&nbsp;云盘</button>
+        <button class="button2" type="button" onclick="jump('src/button/contact.html')"><img src="../images/tongxun.jpg" alt="通讯录按钮图标">&nbsp;通讯录</button>
+    <form class="select">
+        <span id="arrow" style="color:white"><<</span>
+        <select id="others">
+            <option value="function1">function1</option>
+            <option value="function2">function2</option>
+        </select>
+    </form>
+</div>
+<script>
+    function jump(pageUrl){
+        parent.document.getElementById("function1").src=pageUrl;
+    }
+</script>
+</body>
+</html>

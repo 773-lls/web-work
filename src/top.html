@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="../style/top.css">
 </head>
 <body>
 <form>
@@ -11,7 +11,7 @@
     <div style="padding-top:10px">重庆理工大学(学生)</div>
     <div class="top">
     <input id="num" type="text" placeholder="输入邀请码">
-    <img src="images/head.png" alt="人物头像" width="16px" height="16px">
+    <button type="button" onclick="jump('src/tap.html')"><img id="rightHead" src="../images/head.png" alt="人物头像" width="16px" height="16px"></button>
     <select id="account" name="account">
         <option value="谭云聪" selected>谭云聪</option>
         <option value="退出登录">退出登录</option>
@@ -20,5 +20,10 @@
     </div>
     </div>
 </form>
+<script>
+    function jump(pageUrl){
+        parent.document.getElementById("function1").src=pageUrl;
+    }
+</script>
 </body>
 </html>

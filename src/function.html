@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>功能表</title>
+    <link rel="stylesheet" href="../style/function.css">
+</head>
+<body>
+<div class="topblock">
+<div>
+<img src="../images/blue.png" alt="账号管理图标"><span style="font-size: larger">账号管理</span>
+</div><br>
+<div class="container">
+    <button type="button" onclick="jump('form.html')">基本资料</button>
+    <button type="button" onclick="jump('changehead.html')">修改头像</button>
+    <button type="button" onclick="jump('changepassword.html')">密码管理</button>
+    <button type="button">注销账号</button>
+    <button type="button">语音</button>
+</div>
+</div>
+<script>
+    function jump(pageUrl){
+        parent.document.getElementById("form").src=pageUrl;
+    }
+</script>
+</body>
+</html>
