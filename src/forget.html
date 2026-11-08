@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码界面</title>
+</head>
+<body>
+<button onclick="jump('changepassword.html')">返回按钮</button>
+忘记密码界面
+<script>
+    function jump(pageUrl){
+        parent.document.getElementById("form").src=pageUrl;
+    }
+</script>
+</body>
+</html>

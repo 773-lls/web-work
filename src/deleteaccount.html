@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注销账号界面</title>
+    <style>
+        button{
+            margin-left: 700px;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: deepskyblue;
+            color: white;
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<textarea name="注销原因" placeholder="请叙述注销/解绑账的原因..." rows="10" cols="100"></textarea><br>
+<button onclick="secondCheck()">注销/解绑</button>
+<script>
+    function secondCheck(){
+        const choice=confirm("确定要解绑账号吗?解绑之后，操作不可恢复!");
+        if (choice) alert("账号解绑成功");
+        else alert("已取消解绑操作")
+    }
+</script>
+</body>
+</html>

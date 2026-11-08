@@ -14,8 +14,8 @@
     <button type="button" onclick="jump('src/tap.html')"><img id="rightHead" src="../images/head.png" alt="人物头像" width="16px" height="16px"></button>
     <select id="account" name="account">
         <option value="谭云聪" selected>谭云聪</option>
-        <option value="退出登录">退出登录</option>
-        <option value="切换账号">切换账号</option>
+        <option id="exist" value="退出登录">退出登录</option>
+        <option id="change" value="切换账号">切换账号</option>
     </select>
     </div>
     </div>
@@ -23,6 +23,22 @@
 <script>
     function jump(pageUrl){
         parent.document.getElementById("function1").src=pageUrl;
+    }
+    window.onload =function(){
+        let myLang=localStorage.getItem("lang")||"zh";
+        changeText(myLang);
+    }
+    function changeText(type){
+        if (type ==="zh"){
+            document.getElementById("num").placeholder="输入邀请码";
+            document.getElementById("exist").innerText="退出登录";
+            document.getElementById("change").innerText="切换账号";
+        }
+        else{
+            document.getElementById("num").placeholder="invitation";
+            document.getElementById("exist").innerText="exist";
+            document.getElementById("change").innerText="change account";
+        }
     }
 </script>
 </body>

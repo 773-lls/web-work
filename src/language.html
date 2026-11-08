@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语言界面</title>
+</head>
+<body>
+<input type="radio" name="语言" id="cn" onclick="setChinese()">
+<label for="cn">中文</label>
+<input type="radio" name="语言" id="en" onclick="setEnglish()">
+<label for="en">英文</label>
+<script>
+    function setChinese(){
+        localStorage.setItem("lang","zh");
+        jump('form.html');
+    }
+    function setEnglish(){
+        localStorage.setItem("lang","en");
+        jump('form.html');
+    }
+    function jump(pageUrl){
+        parent.document.getElementById("form").src=pageUrl;
+    }
+
+</script>
+</body>
+</html>
