@@ -24,22 +24,6 @@
     function jump(pageUrl){
         parent.document.getElementById("function1").src=pageUrl;
     }
-    window.onload =function(){
-        let myLang=localStorage.getItem("lang")||"zh";
-        changeText(myLang);
-    }
-    function changeText(type){
-        if (type ==="zh"){
-            document.getElementById("num").placeholder="输入邀请码";
-            document.getElementById("exist").innerText="退出登录";
-            document.getElementById("change").innerText="切换账号";
-        }
-        else{
-            document.getElementById("num").placeholder="invitation";
-            document.getElementById("exist").innerText="exist";
-            document.getElementById("change").innerText="change account";
-        }
-    }
 </script>
 </body>
 </html>

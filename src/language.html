@@ -5,19 +5,11 @@
     <title>语言界面</title>
 </head>
 <body>
-<input type="radio" name="语言" id="cn" onclick="setChinese()">
+<input type="radio" name="语言" id="cn" onclick="jump('form.html');">
 <label for="cn">中文</label>
-<input type="radio" name="语言" id="en" onclick="setEnglish()">
+<input type="radio" name="语言" id="en" onclick="jump('form.html');">
 <label for="en">英文</label>
 <script>
-    function setChinese(){
-        localStorage.setItem("lang","zh");
-        jump('form.html');
-    }
-    function setEnglish(){
-        localStorage.setItem("lang","en");
-        jump('form.html');
-    }
     function jump(pageUrl){
         parent.document.getElementById("form").src=pageUrl;
     }
